@@ -1,5 +1,96 @@
-cd dochiphi.github.io
-echo "Hello World" > index.html
-git add --all
-git commit -m "Initial commit"
-git push -u origin main
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; 
+      padding: 0; 
+      background: #f4f4f4;
+    }
+    header, footer {
+      background: #333;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+    .container {
+      max-width: 960px;
+      margin: 2rem auto;
+      background: #fff;
+      padding: 1rem;
+    }
+    h1, h2, h3 {
+      margin-top: 0;
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style-type: none;
+      padding: 0;
+    }
+    nav li {
+      margin: 0 10px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    /* Add more of your own styling here */
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        <!-- Write a quick introduction about yourself here -->
+        Hello! I’m [Your Name], a [Your Role/Profession]. 
+        I love creating and designing solutions to complex problems.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <!-- List a few of your projects here -->
+        <li><strong>Project One</strong> – Short description of your project. 
+          <a href="#" target="_blank">View &raquo;</a>
+        </li>
+        <li><strong>Project Two</strong> – Short description of another project. 
+          <a href="#" target="_blank">View &raquo;</a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>You can reach me at:
+        <a href="mailto:youremail@example.com">youremail@example.com</a>
+      </p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Your Name</p>
+  </footer>
+</body>
+</html>
